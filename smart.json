@@ -1,0 +1,9 @@
+{
+  "name": "http-extras",
+  "description": "Improves the core HTTP package",
+  "homepage": "https://github.com/aldeed/meteor-http-extras",
+  "author": "Eric Dobbertin (http://dairystatedesigns.com)",
+  "version": "0.1.0",
+  "git": "https://github.com/aldeed/meteor-http-extras.git",
+  "packages": {}
+}
