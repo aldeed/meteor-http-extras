@@ -1,4 +1,3 @@
-var path = Npm.require('path');
 var request = Npm.require('request');
 var url_util = Npm.require('url');
 
@@ -144,4 +143,5 @@ var _call = function(method, url, options, callback) {
   });
 };
 
-HTTP.call = Meteor._wrapAsync(_call);
+HTTP.call = Meteor.wrapAsync(_call);
+
