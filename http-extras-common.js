@@ -7,7 +7,13 @@ makeErrorByStatus = function(statusCode, content) {
 
   var message = "failed [" + statusCode + "]";
   if (content)
-    message += " " + truncate(content.replace(/\n/g, " "), MAX_LENGTH);
+    try {
+      message += " " + truncate(content.replace(/\n/g, " "), MAX_LENGTH);
+    }
+    catch (error) {
+      message += " Response is not of type String ";
+    }
+
 
   return new Error(message);
 };
