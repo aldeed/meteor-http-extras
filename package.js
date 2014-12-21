@@ -1,9 +1,11 @@
 Package.describe({
   name: "aldeed:http",
   summary: "Improves the core HTTP package",
-  version: "0.2.1",
+  version: "0.2.2",
   git: "https://github.com/aldeed/meteor-http-extras"
 });
+
+Npm.depends({request: "2.47.0"});
 
 Package.on_use(function (api) {
   api.versionsFrom('METEOR@0.9.4');
