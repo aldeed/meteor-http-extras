@@ -88,11 +88,13 @@ HTTP.call = function(method, url, options, callback) {
     // support custom "ejson-binary" response type
     // and all browser-supported types
     var convertToBinary;
-    if (options.responseType === "ejson-binary") {
-      xhr.responseType = "arraybuffer";
-      convertToBinary = true;
-    } else {
-      xhr.responseType = options.responseType;
+    if(options.responseType) {
+      if (options.responseType === "ejson-binary") {
+        xhr.responseType = "arraybuffer";
+        convertToBinary = true;
+      } else {
+        xhr.responseType = options.responseType;
+      }
     }
 
     for (var k in headers)
