@@ -1,3 +1,5 @@
+IMPORTANT: This package is no longer maintained. Now that Meteor apps can use NPM packages directly, I recommend using a more standards-based package such as [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) rather than Meteor's HTTP package.
+
 http-extras
 =========================
 
