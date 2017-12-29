@@ -1,7 +1,6 @@
-IMPORTANT: This package is no longer maintained. Now that Meteor apps can use NPM packages directly, I recommend using a more standards-based package such as [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) rather than Meteor's HTTP package.
+# http-extras
 
-http-extras
-=========================
+**IMPORTANT: This package is no longer maintained. Now that Meteor apps can use NPM packages directly, I recommend using a more standards-based package such as [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) rather than Meteor's HTTP package.**
 
 Adds the features proposed in [this PR](https://github.com/meteor/meteor/pull/1670/). Add this to your project along with the core `http` package.
 
@@ -10,7 +9,7 @@ Adds the features proposed in [this PR](https://github.com/meteor/meteor/pull/16
 In a Meteor app directory, enter:
 
 ```bash
-$ meteor add http aldeed:http
+meteor add http aldeed:http
 ```
 
 ## Details
